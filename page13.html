@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, borders and backgrounds</title>
+    <style>
+        #body{
+            background: rgb(225,220,0);
+        }
+        #firstpara{
+            background-color: tomato;
+            height: 100px;
+            width: 500px;
+            border-width: 4px;
+            border-color: green;
+            border-style: solid;
+            border-radius: 11px;
+            /* border:4px royalblue solid ; */
+        }
+
+        #secondpara{
+            background-color: rgb(125, 125, 225);
+            height: 100px;
+            width: 500px;
+            border-top: 8px solid pink;
+            border-left: 8px solid violet;
+            border-right: 8px solid red;
+            border-top-left-radius: 8px;
+
+        }
+
+        #thirdpara{
+            height: 300px;
+            width: 480px;
+            color: rgb(255, 4, 4);
+            background-image: url('https://media.comicbook.com/2020/10/dragon-ball-super-new-story-arc-moro-ending-manga-anime-1240965-1280x0.jpeg');
+            background-size: contain;
+            border: rebeccapurple 2px solid;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body id="body">
+    <h3>This is Heading.</h3>
+    <p id="firstpara">This is paragraph.</p>
+
+    <h3>This is second Heading.</h3>
+    <p id="secondpara">This is second paragraph.</p>
+
+    <h3>This is third Heading.</h3>
+    <p id="thirdpara">This is third paragraph.</p>
+</body>
+</html>

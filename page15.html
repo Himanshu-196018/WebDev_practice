@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family:'Dancing Script', cursive;
+        }
+
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;
+            padding: 20px;
+        }
+
+        .items{
+            border: 3px solid black;
+            margin: 12px 4px;
+            padding: 12px 4px;
+            background: rgb(255, 196, 196);
+        }
+        #fruits{
+            float: left;
+            width: 47%;
+        }
+        #computer{
+            float: right;
+            width: 47%;
+        }
+        #stationary{
+            clear: both;
+            /* float: left; */
+            width: 100%;
+        }
+        p,h3{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem officiis eaque, ipsa maxime a voluptates tempore minus dolores perferendis voluptatibus?</p>
+        </div>
+        <div id="computer" class="items">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem officiis eaque, ipsa maxime a voluptates tempore minus dolores perferendis voluptatibus?</p>
+        </div>
+        <div id="stationary" class="items">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem officiis eaque, ipsa maxime a voluptates tempore minus dolores perferendis voluptatibus?</p>
+        </div>
+    </div>
+</body>
+</html>

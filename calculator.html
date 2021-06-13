@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <h3>
+            Calculator made by Himanshu 196018 CST!!
+        </h3>
+    </header>
+    <form name="calculator">
+    <table border='1'>
+        <thead>
+            <tr>
+                <th colspan="4" style="height: 30px;">
+                    <input type="text" name="console" id="console" disabled>
+                </th>
+            </tr>
+        </thead>
+        <tbody align="center"><label for="console">
+            <tr style="height: 40px ;">
+                <td style="width: 40px;"><input type="reset" value="CE" name="CE"></td></td>
+                <td style="width: 40px;"><input type="reset" value="C" name="C"></td>
+                <td style="width: 40px;"><input type="button" value="&leftarrow;" name="&leftarrow;" onclick="calculator.console.value =' '"></td>
+                <td style="width: 40px;"><input type="button" value="/" name="/" onclick="calculator.console.value += '/'"></td>
+            </tr>
+            <tr style="height: 40px ; width: 200px ;">
+                <td><input type="button" value="7" name="7" onclick="calculator.console.value += '7'"></td>
+                <td><input type="button" value="8" name="8" onclick="calculator.console.value += '8'"></td></td>
+                <td><input type="button" value="9" name="9" onclick="calculator.console.value += '9'"></td></td>
+                <td><input type="button" value="*" name="*" onclick="calculator.console.value += '*'"></td></td>
+            </tr>
+            <tr style="height: 40px ;">
+                <td><input type="button" value="4" name="4" onclick="calculator.console.value += '4'"></td>
+                <td><input type="button" value="5" name="5" onclick="calculator.console.value += '5'"></td></td>
+                <td><input type="button" value="6" name="6" onclick="calculator.console.value += '6'"></td></td>
+                <td><input type="button" value="-" name="-" onclick="calculator.console.value += '-'"></td></td>
+            </tr>
+            <tr style="height: 40px ;">
+                <td><input type="button" value="1" name="1" onclick="calculator.console.value += '1'"></td>
+                <td><input type="button" value="2" name="2" onclick="calculator.console.value += '2'"></td></td>
+                <td><input type="button" value="3" name="3" onclick="calculator.console.value += '3'"></td></td>
+                <td><input type="button" value="+" name="+" onclick="calculator.console.value += '+'"></td></td>
+            </tr>
+            <tr style="height: 40px ;">
+                <td><input type="button" value="00" name="00" onclick="calculator.console.value += '00'"></td>
+                <td><input type="button" value="0" name="0" onclick="calculator.console.value += '0'"></td>
+                <td><input type="button" value="." name="." onclick="calculator.console.value += '.'"></td>
+                <td><input type="button" value="&equals;" name="&equals" onclick="calculator.console.value= eval(calculator.console.value)"></td>
+            </tr>
+        </label></tbody>
+    </table>
+    </form>
+</body>
+</html>

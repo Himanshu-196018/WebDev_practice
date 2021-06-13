@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo selectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(206, 255, 206);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px ;
+        }
+        a{
+            text-decoration: none;
+            color: greenyellow;
+        }
+
+        a:hover{
+            color: rgb(40, 66, 0);
+            background-color: darkgray;
+        }
+        a:visited{
+            color: rgb(170, 0, 43);
+            background-color: darkgoldenrod;
+        }
+        a:active{
+            color: darkblue;
+        }
+        .btn{
+            background: rgb(248, 168, 184);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eius distinctio quaerat aliquid dignissimos adipisci impedit amet, ducimus obcaecati voluptatibus maiores, assumenda hic atque numquam doloremque perferendis recusandae. Dolorem, eaque?</p>
+        <a href="https://www.facebook.com/" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>
