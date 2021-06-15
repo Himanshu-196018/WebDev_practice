@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html{
+            font-size: 30px;
+            background-color: aquamarine;
+        }
+        .container{
+            background-color: blueviolet;
+            font-size: 20px;
+            width: 100vw;
+            height: 100vh;
+        }
+        .para{
+            border: 2px solid greenyellow;
+            margin: 4px;
+        }
+        #para1{
+            font-size: 3em;
+            height: 3em;
+        }
+        #para2{
+            font-size: 3rem;
+            height: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="para" id="para1">This is for em</p>
+        <p class="para" id="para2">This is for rem</p>
+        <p class="para" id="para3">used vh for container height</p>
+        <p class="para" id="para4">used vw for container width</p>
+    </div>
+</body>
+</html>
