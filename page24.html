@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <style>
+        .container {
+            background-color: azure;
+        }
+
+        p {
+            background-color: yellowgreen;
+        }
+
+        div p {
+            background-color: tomato;
+        }
+
+        div>p {
+            background-color: violet;
+        }
+
+        div+p {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <p class="para">This is para.</p>
+            <ul>
+                <li>this is a list item.</li>
+                <li>
+                    <p> This is para in list.</p>
+                </li>
+                <li>This is list item.</li>
+                <p>This is a paragraph.</p>
+            </ul>
+            <p>this is a paragraph. </p>
+        </div>
+        <p>This is a paragraph.</p>
+        <div class="box" id="box2">
+            <p>paragraph.</p>
+        </div>
+        <p>This is a paragraph.</p>
+    </div>
+    <p>This is a paragraph.</p>
+</body>
+
+</html>
