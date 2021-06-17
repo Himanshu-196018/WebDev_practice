@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and animation</title>
+    <style>
+        .container{
+            display: flex;
+            margin: auto;
+            background-color: black;
+            width: 300px;
+
+        }
+        .box{
+            background-color: white;
+            width: 20px;
+            height: 20px;
+            margin: 1px;
+            position: relative;
+            animation-name: squbox;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes squbox {
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+            50%{
+                left: 280px;
+                top: 0px;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
